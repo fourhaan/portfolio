@@ -250,7 +250,7 @@ export default function WaterDropletBackground() {
     <canvas
       ref={canvasRef}
       aria-hidden="true"
-      className="fixed inset-0 z-0 h-full w-full pointer-events-none opacity-60"
+      className="fixed inset-0 z-0 h-full w-full pointer-events-none opacity-35"
       style={{
         imageRendering: "auto",
       }}
