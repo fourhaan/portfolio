@@ -111,6 +111,67 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (hover: hover) and (pointer: fine) {
+  body,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    cursor: none;
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 60;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--foreground);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .custom-cursor {
+    display: block;
+  }
+}
+
+.custom-cursor--visible {
+  opacity: 1;
+}
+
+.custom-cursor__core {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+  background: currentColor;
+}
+
+.custom-cursor--click .custom-cursor__core {
+  animation: cursorClickPulse 260ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cursorClickPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  55% {
+    transform: translate(-50%, -50%) scale(1.85);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
 .scroll-reveal {
   opacity: 0;
   transform: translate3d(0, 18px, 0);
@@ -205,6 +266,11 @@ html {
     transform: none;
     filter: none;
     transition: none;
+  }
+
+  .custom-cursor__core,
+  .custom-cursor--click .custom-cursor__core {
+    animation: none !important;
   }
 
   .side-nav-tap {
