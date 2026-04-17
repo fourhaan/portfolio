@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ScrollReveal from "./ScrollReveal";
 
 export default function LandingCTA() {
   return (
@@ -6,7 +7,7 @@ export default function LandingCTA() {
       id="contact"
       className="scroll-mt-16 border-b border-[color:var(--border)] bg-[color:var(--card-bg)]"
     >
-      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
+      <ScrollReveal className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold tracking-[0.35em] text-[color:var(--secondary-fg)] opacity-70">
             READY TO BUILD?
@@ -23,7 +24,7 @@ export default function LandingCTA() {
             </Link>
           </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

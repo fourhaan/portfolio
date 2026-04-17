@@ -1,10 +1,12 @@
+import ScrollReveal from "./ScrollReveal";
+
 export default function LandingSectionPath() {
   return (
     <section
       id="path"
       className="scroll-mt-16 border-b border-[color:var(--border)]"
     >
-      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
+      <ScrollReveal className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
         <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight text-[color:var(--foreground)] md:text-3xl">
@@ -52,7 +54,7 @@ export default function LandingSectionPath() {
             </div>
           </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ScrollReveal from "./ScrollReveal";
 
 function VerticalWord({ children }: { children: string }) {
   return (
@@ -27,7 +28,7 @@ export default function LandingHero() {
 
       <VerticalWord>SHARPEN THE CRAFT</VerticalWord>
 
-      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:py-24">
+      <ScrollReveal className="mx-auto w-full max-w-6xl px-6 py-16 md:py-24">
         <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-end">
           <div className="relative">
             <p className="text-xs font-semibold tracking-[0.35em] text-[color:var(--faint)]">
@@ -71,7 +72,7 @@ export default function LandingHero() {
             <div className="mt-6 h-40 rounded-2xl border border-[color:var(--border)] bg-[color:var(--badge-bg)]" />
           </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

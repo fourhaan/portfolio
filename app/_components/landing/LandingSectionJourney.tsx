@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ScrollReveal from "./ScrollReveal";
 
 export default function LandingSectionJourney() {
   return (
@@ -6,7 +7,7 @@ export default function LandingSectionJourney() {
       id="journey"
       className="scroll-mt-16 border-b border-[color:var(--border)]"
     >
-      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
+      <ScrollReveal className="mx-auto w-full max-w-6xl px-6 py-16 md:py-20">
         <div className="flex items-end justify-between gap-6">
           <div>
             <p className="text-xs font-semibold tracking-[0.35em] text-[color:var(--faint)]">
@@ -68,7 +69,7 @@ export default function LandingSectionJourney() {
             </div>
           </div>
         </div>
-      </div>
+      </ScrollReveal>
     </section>
   );
 }
