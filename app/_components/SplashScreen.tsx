@@ -41,7 +41,6 @@ export default function SplashScreen() {
           preload="auto"
           poster="/petals.gif"
         >
-          <source src="/petals.mp4" type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(244,63,94,0.20),transparent_55%),radial-gradient(circle_at_20%_60%,rgba(251,113,133,0.12),transparent_55%)]" />
