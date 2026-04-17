@@ -31,7 +31,6 @@ export default function SplashScreen() {
       <div className="splash-scene absolute inset-0">
         <div className="absolute inset-0 bg-zinc-950" />
 
-        {/* Petal falling media (place your file in /public as petals.mp4 and/or petals.gif) */}
         <video
           className="absolute inset-0 h-full w-full object-cover opacity-80"
           autoPlay
@@ -39,9 +38,8 @@ export default function SplashScreen() {
           muted
           playsInline
           preload="auto"
-          poster="/blossom.mp4"
         >
-          <source src="/blossom.mp4" type="video/mp4" />
+          <source src="blossom.mp4" type="video/mp4" />
         </video>
 
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(244,63,94,0.20),transparent_55%),radial-gradient(circle_at_20%_60%,rgba(251,113,133,0.12),transparent_55%)]" />
